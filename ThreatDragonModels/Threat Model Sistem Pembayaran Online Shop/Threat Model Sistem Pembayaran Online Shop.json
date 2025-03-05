@@ -31,8 +31,8 @@
                 "text": "Pengguna/Pembeli"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,135 +128,50 @@
               "description": "Melakukan pemesanan dan pembayaran.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c2ae54ce-cd4b-4178-84ab-30fee492f246",
+                  "title": "Fake Account & Credential Abuse",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Akun palsu, Credential stuffing dengan daftar kredensial curian.",
+                  "mitigation": "- Multi-Factor Authentication (MFA)\n- Rate limiting pada login\n- ReCAPTCHA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "9"
+                },
+                {
+                  "id": "40f9b719-296d-4820-9c45-55ec964f6344",
+                  "title": "Transaction Denial",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna menyangkal transaksi yang telah dilakukan.",
+                  "mitigation": "- Digital signature pada transaksi\n- Log transaksi terenkripsi\n- Email/SMS konfirmasi transaksi",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
             "position": {
-              "x": -25,
-              "y": 370
+              "x": -30,
+              "y": 380
             },
             "size": {
               "width": 140,
               "height": 80
-            },
-            "attrs": {
-              "text": {
-                "text": "Bank/Penyedia \nLayanan Keuangan "
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "b6f20d6f-c16a-4123-9ba4-2dede5bad717"
-                },
-                {
-                  "group": "right",
-                  "id": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
-                },
-                {
-                  "group": "bottom",
-                  "id": "762629ba-5537-4af2-973a-d55474f1f37c"
-                },
-                {
-                  "group": "left",
-                  "id": "846d376e-bdb2-494b-8c8f-cab15d6db464"
-                }
-              ]
-            },
-            "id": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Bank/Penyedia \nLayanan Keuangan ",
-              "description": "Memproses transaksi dan memberikan konfirmasi pembayaran.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": -35,
-              "y": 695
-            },
-            "size": {
-              "width": 150,
-              "height": 70
             },
             "attrs": {
               "text": {
@@ -352,12 +267,128 @@
                 }
               ]
             },
+            "id": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Payment Gateway ",
+              "description": "Menghubungkan e-commerce dengan bank/penyedia layanan ",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -35,
+              "y": 695
+            },
+            "size": {
+              "width": 150,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Bank/Penyedia \nLayanan \nKeuangan "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6f20d6f-c16a-4123-9ba4-2dede5bad717"
+                },
+                {
+                  "group": "right",
+                  "id": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+                },
+                {
+                  "group": "bottom",
+                  "id": "762629ba-5537-4af2-973a-d55474f1f37c"
+                },
+                {
+                  "group": "left",
+                  "id": "846d376e-bdb2-494b-8c8f-cab15d6db464"
+                }
+              ]
+            },
             "id": "8bf91ab5-4cf1-4af2-a7f5-fc79bb2298ad",
             "zIndex": 3,
             "data": {
               "type": "tm.Actor",
-              "name": "Payment Gateway ",
-              "description": "Menghubungkan e-commerce dengan bank/penyedia layanan keuangan untuk memproses pembayaran.",
+              "name": "Bank/Penyedia \nLayanan \nKeuangan ",
+              "description": "Memproses transaksi dan memberikan konfirmasi pembayaran.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -379,8 +410,8 @@
                 "text": "Pemesanan \nProduk "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -476,12 +507,47 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3aabf473-b321-4638-9b0f-e7360b3c87df",
+                  "title": "Order Data Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Manipulasi data pesanan seperti harga dan jumlah produk.",
+                  "mitigation": "- Validasi input di server\n- Hashing/signature pada data pesanan\n- Server-side price verification",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "8"
+                },
+                {
+                  "id": "defc7615-1927-4327-9cba-22138a40c39e",
+                  "title": "Order Information Leak",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Kebocoran informasi pesanan pengguna ke pihak tidak berwenang.",
+                  "mitigation": "- Enkripsi data pesanan (AES-256)\n- Role-based access control (RBAC)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -601,7 +667,10 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
+            },
+            "children": [
+              "e3719568-1b48-48d9-af1a-fcd1e4f594d7"
+            ]
           },
           {
             "position": {
@@ -617,8 +686,8 @@
                 "text": "Memproses \nPembayaran "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -714,18 +783,79 @@
               "description": "Sistem mengirimkan detail pembayaran ke Payment Gateway.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "de936dc3-1834-43fe-97e7-d9b09534ab32",
+                  "title": "Payment Identity Fraud",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang berpura-pura sebagai pengguna atau payment gateway.",
+                  "mitigation": "- TLS 1.2+ untuk enkripsi komunikasi\n- OAuth2 atau JWT untuk API authentication\n- IP whitelisting untuk payment gateway",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "9"
+                },
+                {
+                  "id": "df460110-de3c-4caf-a97b-924c42193ed1",
+                  "title": "Payment Amount Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Perubahan jumlah pembayaran oleh pihak tidak sah.",
+                  "mitigation": "- HMAC untuk integritas data pembayaran\n- End-to-end encryption (E2EE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "9"
+                },
+                {
+                  "id": "bb2caba5-2f41-46bf-9736-68685580e6f8",
+                  "title": "False Payment Denial",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Pengguna mengklaim tidak pernah melakukan pembayaran.",
+                  "mitigation": "- Hash transaksi di blockchain/log immutable\n- Notifikasi transaksi dengan timestamp",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "6"
+                },
+                {
+                  "id": "5bdffc03-786c-4ea8-9e65-81ff12946a0e",
+                  "title": "Credit Card Data Leak",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data kartu kredit bocor akibat penyimpanan tidak aman.",
+                  "mitigation": "- Tokenisasi data kartu kredit\n- PCI-DSS compliance untuk keamanan data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "10"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
               "x": 425,
-              "y": 470
+              "y": 530
             },
             "size": {
               "width": 100,
@@ -843,8 +973,8 @@
           },
           {
             "position": {
-              "x": 415,
-              "y": 665
+              "x": 420,
+              "y": 795
             },
             "size": {
               "width": 120,
@@ -855,8 +985,8 @@
                 "text": "Validasi \nPembayaran "
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -952,18 +1082,53 @@
               "description": "Bank memverifikasi transaksi dan memberikan respons ke Payment Gateway.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "54d40e32-814f-49b6-98d9-735345351ffc",
+                  "title": "Transaction Status Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Manipulasi status transaksi untuk keuntungan pribadi.",
+                  "mitigation": "- Cryptographic signature dari bank\n- Validasi transaksi dengan checksum atau nonce",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "8"
+                },
+                {
+                  "id": "6ac45d07-cbd2-494e-abbd-9ee34320f66d",
+                  "title": "Payment Processing Overload",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Serangan membanjiri sistem dengan transaksi palsu.",
+                  "mitigation": "- Rate limiting pada API\n- Web Application Firewall (WAF)\t",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
-              "x": 425,
-              "y": 865
+              "x": 600,
+              "y": 380
             },
             "size": {
               "width": 100,
@@ -1081,8 +1246,8 @@
           },
           {
             "position": {
-              "x": 425,
-              "y": 1059
+              "x": 860,
+              "y": 380
             },
             "size": {
               "width": 100,
@@ -1090,7 +1255,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Pembaruan \nStatus Pesanan "
+                "text": "Pembaruan \nStatus \nPesanan "
               },
               "body": {
                 "stroke": "#333333",
@@ -1186,7 +1351,7 @@
             "zIndex": 10,
             "data": {
               "type": "tm.Process",
-              "name": "Pembaruan \nStatus Pesanan ",
+              "name": "Pembaruan \nStatus \nPesanan ",
               "description": "E-commerce mengonfirmasi pembayaran ke pengguna dan memperbarui status pesanan.",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1238,60 +1403,10 @@
               "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
             },
             "target": {
-              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "cell": "d4d670dd-c100-41e0-9359-2f5c3f3dad9c",
               "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Metode\nPembayaran \nyang Tersedia",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Metode\nPembayaran \nyang Tersedia"
-            ],
-            "id": "d3211233-2cc5-4d53-97dd-2e39d30357f3",
-            "source": {
-              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
-              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
-            },
-            "target": {
-              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
-              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 200
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1327,14 +1442,104 @@
             "labels": [
               "Permintaan \nOpsi Pembayaran"
             ],
-            "id": "42b06ca7-6780-4089-bce9-49bd599d81ee",
+            "id": "38cd8c7e-36a8-425d-9d1a-b124c1957908",
             "source": {
-              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "cell": "d4d670dd-c100-41e0-9359-2f5c3f3dad9c",
               "port": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
             },
             "target": {
-              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
               "port": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Metode\nPembayaran\nyang Tersedia",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Metode\nPembayaran\nyang Tersedia"
+            ],
+            "id": "7baf65f2-f51f-4962-ac2f-aea65eef93c6",
+            "source": {
+              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "target": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Detail dan Metode \nPembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Detail dan Metode \nPembayaran"
+            ],
+            "id": "9755a287-0f87-4f92-969b-6df69f3183e0",
+            "source": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
             },
             "vertices": []
           },
@@ -1372,9 +1577,54 @@
             "labels": [
               "Simpan Pesanan"
             ],
-            "id": "7984781a-0e71-4463-9e4a-a91432b06e08",
+            "id": "89f6c812-b2c1-403e-9dda-61756f833179",
             "source": {
-              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "cell": "d4d670dd-c100-41e0-9359-2f5c3f3dad9c",
+              "port": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+            },
+            "target": {
+              "cell": "912fa72f-114c-4bd1-a811-de9827ae5520",
+              "port": "ce10c6b8-3ffa-4f9b-8574-60244c21f3ac"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Simpan Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Simpan Transaksi"
+            ],
+            "id": "7c93bb95-4088-492b-b8ec-dc6abb65d2ab",
+            "source": {
+              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
               "port": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
             },
             "target": {
@@ -1403,7 +1653,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Detail dan \nMetode Pembayaran",
+              "name": "Kirim Data\nPembayaran",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1415,28 +1665,784 @@
               "threats": []
             },
             "labels": [
-              "Detail dan \nMetode Pembayaran"
+              "Kirim Data\nPembayaran"
             ],
-            "id": "45c13776-54d7-4e15-b3bd-7a7ac8dcc42e",
+            "id": "96e02b01-250e-47e1-aac2-6c86ac772a92",
             "source": {
               "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
               "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
             },
             "target": {
-              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "cell": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
               "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
             },
             "vertices": [
               {
-                "x": 190,
-                "y": 290
+                "x": 330,
+                "y": 360
+              },
+              {
+                "x": 270,
+                "y": 400
               }
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan \nTransaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "b2d78528-3e9c-4c33-b4e1-77c0c4f53914",
+                  "title": "Transaction Data Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Data transaksi diubah oleh pihak tidak sah saat dikirim ke bank.",
+                  "mitigation": "- TLS 1.3 untuk enkripsi komunikasi\n- End-to-end encryption (E2EE)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "10"
+                },
+                {
+                  "id": "8d0793dc-aa45-404d-9d4f-a6e78664e26a",
+                  "title": "Transaction Flooding Attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Serangan dengan permintaan transaksi berlebihan ke bank sehingga sistem down",
+                  "mitigation": "- API rate limiting (misal: max 100 request/menit per IP)\n- Load balancing",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Permintaan \nTransaksi"
+            ],
+            "id": "20277ddc-132e-4d40-bcbc-e9720cc74ab1",
+            "source": {
+              "cell": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "a55463bd-b68f-45da-a227-c1b9b848a9fe",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Detail Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Detail Transaksi"
+            ],
+            "id": "913d43e2-5aff-478c-b94a-e40d2e111fec",
+            "source": {
+              "cell": "a55463bd-b68f-45da-a227-c1b9b848a9fe",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "target": {
+              "cell": "8bf91ab5-4cf1-4af2-a7f5-fc79bb2298ad",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Memeriksa \nDetail Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Memeriksa \nDetail Pembayaran"
+            ],
+            "id": "d9e4ff47-083b-4b3a-a87f-5d40cecd2768",
+            "source": {
+              "cell": "8bf91ab5-4cf1-4af2-a7f5-fc79bb2298ad",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "70696371-7ba9-47e1-a59b-ffbfa9703b6c",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 750
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Status Pembayaran:\nBerhasil/Gagal",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Status Pembayaran:\nBerhasil/Gagal"
+            ],
+            "id": "cba7fef3-ceb7-4530-81b6-4c10ed61d64c",
+            "source": {
+              "cell": "70696371-7ba9-47e1-a59b-ffbfa9703b6c",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "target": {
+              "cell": "8bf91ab5-4cf1-4af2-a7f5-fc79bb2298ad",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 820
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hasil Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Hasil Transaksi"
+            ],
+            "id": "65797c5d-eae7-464a-8e1b-d382553e435d",
+            "source": {
+              "cell": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "2f65d14a-e84d-4123-848b-61219b866964",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Perbarui\nStatus Pesanan",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Perbarui\nStatus Pesanan"
+            ],
+            "id": "f2dd31f7-aed6-4d79-a9dc-fc7d7313ec4a",
+            "source": {
+              "cell": "2f65d14a-e84d-4123-848b-61219b866964",
+              "port": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+            },
+            "target": {
+              "cell": "ed3992d6-3227-46c3-9719-91497b2a0b0e",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Update Data"
+            ],
+            "id": "bc16e189-aec9-4ec2-9c16-7675620b2978",
+            "source": {
+              "cell": "ed3992d6-3227-46c3-9719-91497b2a0b0e",
+              "port": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+            },
+            "target": {
+              "cell": "912fa72f-114c-4bd1-a811-de9827ae5520",
+              "port": "f2e489c7-039d-4afa-b6b2-d6a09e9b701f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Konfirmasi ke Pengguna",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Konfirmasi ke Pengguna"
+            ],
+            "id": "099efced-d15e-442c-97e0-2b21cfceb327",
+            "source": {
+              "cell": "ed3992d6-3227-46c3-9719-91497b2a0b0e",
+              "port": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+            },
+            "target": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "b6f20d6f-c16a-4123-9ba4-2dede5bad717"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 290
+              },
+              {
+                "x": 1040,
+                "y": -90
+              },
+              {
+                "x": 880,
+                "y": -170
+              },
+              {
+                "x": 510,
+                "y": -170
+              },
+              {
+                "x": 100,
+                "y": -150
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "User Input \nValidation",
+              "description": "Data dari pengguna bisa mengandung input yang tidak valid atau berbahaya, sehingga harus divalidasi sebelum diproses lebih lanjut.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "User Input \nValidation"
+            ],
+            "id": "a22a42ee-d139-4cad-b9ea-c5b76bbd869e",
+            "source": {
+              "x": 100,
+              "y": -20
+            },
+            "target": {
+              "x": 120,
+              "y": 150
+            },
+            "vertices": [
+              {
+                "x": 160,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Secure Payment \nProcessing",
+              "description": "Data pembayaran dikirim ke layanan eksternal yang tidak sepenuhnya dalam kendali sistem, sehingga harus diamankan dengan enkripsi dan autentikasi.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Secure Payment \nProcessing"
+            ],
+            "id": "b32699a6-0637-4062-b5ad-cd11c1e124bb",
+            "source": {
+              "x": 310,
+              "y": 300
+            },
+            "target": {
+              "x": 420,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External Financial \nNetwork",
+              "description": "Interaksi dengan sistem eksternal (bank) yang memiliki aturan dan keamanan berbeda, sehingga perlu protokol komunikasi yang aman.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "External Financial \nNetwork"
+            ],
+            "id": "7002ca47-b54c-408c-88a6-8b02f71a2c5a",
+            "source": {
+              "x": -30,
+              "y": 480
+            },
+            "target": {
+              "x": 130,
+              "y": 480
+            },
+            "vertices": [
+              {
+                "x": 60,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Bank Response Validation",
+              "description": "Data dari bank bisa dipalsukan atau dimanipulasi jika tidak diverifikasi dengan signature digital atau tokenisasi.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Bank Response Validation"
+            ],
+            "id": "68af78c9-b6c0-4d79-8791-3dbdf8f0751e",
+            "source": {
+              "x": -40,
+              "y": 670
+            },
+            "target": {
+              "x": 120,
+              "y": 670
+            },
+            "vertices": [
+              {
+                "x": 50,
+                "y": 640
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Transaction Confirmation \nSecurity",
+              "description": ": Notifikasi transaksi bisa dimanipulasi atau dicegat oleh pihak yang tidak berwenang, sehingga memerlukan proteksi anti-spoofing",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Transaction Confirmation \nSecurity"
+            ],
+            "id": "5ff2e574-6bf8-4d28-aebe-caf0bfa04a47",
+            "source": {
+              "x": 580,
+              "y": 520
+            },
+            "target": {
+              "x": 740,
+              "y": 520
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 550
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notifikasi Pembayaran\nBerhasil/Gagal",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Notifikasi Pembayaran\nBerhasil/Gagal"
+            ],
+            "id": "2e15e58a-8343-47ef-aeb2-e4c9283c513f",
+            "source": {
+              "cell": "2f65d14a-e84d-4123-848b-61219b866964",
+              "port": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+            },
+            "target": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "762629ba-5537-4af2-973a-d55474f1f37c"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 900
+              },
+              {
+                "x": 240,
+                "y": 940
+              },
+              {
+                "x": -70,
+                "y": 920
+              },
+              {
+                "x": -120,
+                "y": 630
+              },
+              {
+                "x": -100,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Order Status Integrity",
+              "description": "Status pesanan harus dijaga keutuhannya dan tidak boleh diubah oleh pihak yang tidak memiliki izin. Diperlukan kontrol akses dan logging.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Order Status Integrity"
+            ],
+            "id": "bb8fec24-8662-416b-b979-a2a427e13b66",
+            "source": {
+              "x": 960,
+              "y": 340
+            },
+            "target": {
+              "x": 1070,
+              "y": 450
+            },
+            "vertices": [
+              {
+                "x": 1030,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hasil\nValidas",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0e51a72e-cfcc-4832-af17-6a55c21b91fc",
+                  "title": "Validation Response Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Manipulasi hasil validasi transaksi dari bank sebelum diterima oleh Payment Gateway.",
+                  "mitigation": "- Cryptographic signature dari bank\n- Validasi transaksi dengan checksum atau nonce",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Hasil\nValidas"
+            ],
+            "id": "fa7061c3-d2d8-4ac1-adc0-cae4318f63bf",
+            "source": {
+              "cell": "8bf91ab5-4cf1-4af2-a7f5-fc79bb2298ad",
+              "port": "b6f20d6f-c16a-4123-9ba4-2dede5bad717"
+            },
+            "target": {
+              "cell": "b6f2e27b-0792-4eb1-ba7f-a91f4ed1449d",
+              "port": "762629ba-5537-4af2-973a-d55474f1f37c"
+            },
+            "vertices": []
+          },
+          {
             "position": {
-              "x": 830,
-              "y": -80
+              "x": 850,
+              "y": -100
             },
             "size": {
               "width": 120,
@@ -1558,8 +2564,8 @@
           },
           {
             "position": {
-              "x": 850,
-              "y": 190
+              "x": 690,
+              "y": 170.0000000000001
             },
             "size": {
               "width": 120,
@@ -1570,11 +2576,13 @@
                 "text": "Database Transaksi "
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1670,13 +2678,33 @@
               "description": "Menyimpan catatan transaksi pembayaran.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fe0ae4fc-c273-4dfd-a860-7f407586b7b3",
+                  "title": "Transaction History Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Perubahan riwayat transaksi tanpa izin.",
+                  "mitigation": "- Database integrity checks (hashing, checksum)\n- Immutable log storage",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           }
         ],
