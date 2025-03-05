@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 60,
-              "y": 100
+              "x": -30,
+              "y": 60
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 150,
+              "height": 70
             },
             "attrs": {
               "text": {
@@ -135,8 +135,8 @@
           },
           {
             "position": {
-              "x": 70,
-              "y": 290
+              "x": -25,
+              "y": 370
             },
             "size": {
               "width": 140,
@@ -247,27 +247,20 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": 110,
-              "y": 450
+              "x": -35,
+              "y": 695
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 150,
+              "height": 70
             },
             "attrs": {
               "text": {
-                "text": "•\tPayment Gateway "
+                "text": "Payment Gateway "
               },
               "body": {
                 "stroke": "#333333",
@@ -363,12 +356,1326 @@
             "zIndex": 3,
             "data": {
               "type": "tm.Actor",
-              "name": "•\tPayment Gateway ",
+              "name": "Payment Gateway ",
               "description": "Menghubungkan e-commerce dengan bank/penyedia layanan keuangan untuk memproses pembayaran.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 410,
+              "y": -120
+            },
+            "size": {
+              "width": 130,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Pemesanan \nProduk "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "d4d670dd-c100-41e0-9359-2f5c3f3dad9c",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Pemesanan \nProduk ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 405,
+              "y": 70.00000000000011
+            },
+            "size": {
+              "width": 140,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Menampilkan \nOpsi \nPembayaran "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Menampilkan \nOpsi \nPembayaran ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 420,
+              "y": 270
+            },
+            "size": {
+              "width": 110,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Memproses \nPembayaran "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Memproses \nPembayaran ",
+              "description": "Sistem mengirimkan detail pembayaran ke Payment Gateway.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 425,
+              "y": 470
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Mengirim \nPermintaan \nke Bank "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "a55463bd-b68f-45da-a227-c1b9b848a9fe",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Mengirim \nPermintaan \nke Bank ",
+              "description": "Payment Gateway meneruskan permintaan pembayaran ke Bank/Penyedia Layanan Keuangan.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 415,
+              "y": 665
+            },
+            "size": {
+              "width": 120,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Validasi \nPembayaran "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "70696371-7ba9-47e1-a59b-ffbfa9703b6c",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Process",
+              "name": "Validasi \nPembayaran ",
+              "description": "Bank memverifikasi transaksi dan memberikan respons ke Payment Gateway.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 425,
+              "y": 865
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Konfirmasi \nTransaksi "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "2f65d14a-e84d-4123-848b-61219b866964",
+            "zIndex": 9,
+            "data": {
+              "type": "tm.Process",
+              "name": "Konfirmasi \nTransaksi ",
+              "description": "Payment Gateway mengirimkan hasil transaksi ke e-commerce.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 425,
+              "y": 1059
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Pembaruan \nStatus Pesanan "
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+                },
+                {
+                  "group": "right",
+                  "id": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+                },
+                {
+                  "group": "left",
+                  "id": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+                }
+              ]
+            },
+            "id": "ed3992d6-3227-46c3-9719-91497b2a0b0e",
+            "zIndex": 10,
+            "data": {
+              "type": "tm.Process",
+              "name": "Pembaruan \nStatus Pesanan ",
+              "description": "E-commerce mengonfirmasi pembayaran ke pengguna dan memperbarui status pesanan.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Detail Pesanan",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Detail Pesanan"
+            ],
+            "id": "5a0a6dc6-93b5-48a7-955f-875e1fc67b2f",
+            "source": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Metode\nPembayaran \nyang Tersedia",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Metode\nPembayaran \nyang Tersedia"
+            ],
+            "id": "d3211233-2cc5-4d53-97dd-2e39d30357f3",
+            "source": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "target": {
+              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan \nOpsi Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Permintaan \nOpsi Pembayaran"
+            ],
+            "id": "42b06ca7-6780-4089-bce9-49bd599d81ee",
+            "source": {
+              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "port": "d7adb1ce-ef52-44d7-9472-35dad74fa184"
+            },
+            "target": {
+              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+              "port": "b6e39d18-f6d8-4ab2-917c-9b5f9d903c2d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Simpan Pesanan",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Simpan Pesanan"
+            ],
+            "id": "7984781a-0e71-4463-9e4a-a91432b06e08",
+            "source": {
+              "cell": "26daedfb-9662-45cd-ab4f-06eded794c7e",
+              "port": "5d479dc2-18e3-4393-a22b-e6a894a964f0"
+            },
+            "target": {
+              "cell": "bab2c72b-19d5-45ec-92f8-6b46a44f970c",
+              "port": "ce10c6b8-3ffa-4f9b-8574-60244c21f3ac"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Detail dan \nMetode Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Detail dan \nMetode Pembayaran"
+            ],
+            "id": "45c13776-54d7-4e15-b3bd-7a7ac8dcc42e",
+            "source": {
+              "cell": "aefa9e77-6542-47fe-a1cd-2fecb987d690",
+              "port": "4f290743-b279-4e5b-8c02-2c3df1da95c0"
+            },
+            "target": {
+              "cell": "afabca09-4645-4de0-a7bc-5823be44832f",
+              "port": "224f6901-a9c3-49b7-a1c8-65d75778f5de"
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 830,
+              "y": -80
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database Pesanan"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9c7b139-24be-4672-a248-2226aa9b0a98"
+                },
+                {
+                  "group": "right",
+                  "id": "9bb890f6-c029-4850-ad70-39a140c6299b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f2e489c7-039d-4afa-b6b2-d6a09e9b701f"
+                },
+                {
+                  "group": "left",
+                  "id": "ce10c6b8-3ffa-4f9b-8574-60244c21f3ac"
+                }
+              ]
+            },
+            "id": "912fa72f-114c-4bd1-a811-de9827ae5520",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Database Pesanan",
+              "description": "Menyimpan informasi pesanan dan status pembayaran.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 850,
+              "y": 190
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database Transaksi "
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d9c7b139-24be-4672-a248-2226aa9b0a98"
+                },
+                {
+                  "group": "right",
+                  "id": "9bb890f6-c029-4850-ad70-39a140c6299b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f2e489c7-039d-4afa-b6b2-d6a09e9b701f"
+                },
+                {
+                  "group": "left",
+                  "id": "ce10c6b8-3ffa-4f9b-8574-60244c21f3ac"
+                }
+              ]
+            },
+            "id": "bab2c72b-19d5-45ec-92f8-6b46a44f970c",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Database Transaksi ",
+              "description": "Menyimpan catatan transaksi pembayaran.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
             }
           }
